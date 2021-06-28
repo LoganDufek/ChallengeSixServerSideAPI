@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+background-image: linear-gradient(to right, rgb(10, 0, 156) , rgb(66, 0, 97))
+}
+
+
+.SearchArea {
+    padding-left: 30px;
+    padding-bottom: 20px;
+    border-collapse: inherit;
+}
+
+.SearchArea h3 {
+ font-size: 30px;
+font-weight: 700;
+}
+
+.SearchButton {
+    background-color: #5aa2e9;
+    border-style: none;
+    border-radius: 3px;
+    padding: 5px 0px;
+    
+    
+}
+
+.EnterCity {
+    margin-bottom: 10px;
+    height: 45px;
+    border-radius: 4px;
+}
+
+.CityHistory {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px rgb(63, 63, 63) solid;
+}
