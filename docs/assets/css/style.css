@@ -1,11 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    
 }
 
 header {
-background-image: linear-gradient(to right, rgb(10, 0, 156) , rgb(66, 0, 97))
+background-image: linear-gradient(to right, rgb(10, 0, 156) , rgb(66, 0, 97));
+margin: 10px 15px; 
 }
 
 
@@ -29,6 +30,21 @@ font-weight: 700;
     
 }
 
+
+.HistoryButton {
+    background-color: #bebebe;
+    border-style: none;
+    border-radius: 3px;
+    text-align: center;
+    color: black;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px 20px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
 .EnterCity {
     margin-bottom: 10px;
     height: 45px;
@@ -36,7 +52,40 @@ font-weight: 700;
 }
 
 .CityHistory {
+   
     margin-top: 20px;
     padding-top: 20px;
     border-top: 2px rgb(63, 63, 63) solid;
+   
 }
+
+#display {
+    display: block;
+}
+
+
+.DisplayAreaOne {
+    display: block;
+    border: 2px solid rgb(63, 63, 63);
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px
+};
+
+.CityTitle {
+    font-size: 50px;
+}
+
+.forecast {
+    display: inline-block;
+    background-color: #33475a;
+    color: whitesmoke;
+    padding-top: 5px;
+    padding-right: 80px;
+    padding-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
