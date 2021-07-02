@@ -5,28 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linked CSS stylesheet and framework -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather API</title>
 </head>
+<!-- Body content starts here -->
 
 <body>
+
     <header class="mt-3">
         <h2 class="title fs-2 fw-bolder text-light text-center pt-3 pb-3">Weather Dashboard</h2>
     </header>
+    <!-- Bootstrap grid layout used for divs -->
     <main class="row">
         <div class="SearchArea col-3">
             <h3>Search for a City:</h3>
             <form>
-                <input type="text" class="EnterCity col-12" placeholder="Eagan" id = "EnterCity">
+                <input type="text" class="EnterCity col-12" placeholder="Eagan" id="EnterCity">
                 <button class="SearchButton mt-2 text-light col-12" id="search" type="button">
                     Search
                 </button>
             </form>
 
-            <div class="CityHistory mt-2 text-light" >
-                <div id="CityHistory" type="button" >
-                    
+            <div class="CityHistory mt-2 text-light">
+                <div id="CityHistory" type="button">
+
                 </div>
             </div>
         </div>
@@ -40,10 +44,12 @@
         </div>
 
     </main>
+    <!-- Linked Javascript and 3rdParty -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
+    <!-- Body content ends here -->
 </body>
 
 </html>

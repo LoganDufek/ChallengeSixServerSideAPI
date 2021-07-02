@@ -4,12 +4,13 @@
     
 }
 
+/* Header Styling */
 header {
 background-image: linear-gradient(to right, rgb(10, 0, 156) , rgb(66, 0, 97));
 margin: 10px 15px; 
 }
 
-
+/* Search Area styling starts here */
 .SearchArea {
     padding-left: 30px;
     padding-bottom: 20px;
@@ -29,8 +30,15 @@ font-weight: 700;
     
     
 }
+.EnterCity {
+    margin-bottom: 10px;
+    height: 45px;
+    border-radius: 4px;
+}
+/* Search Area styling ends here */
 
 
+/* City history styling begins here */
 .HistoryButton {
     background-color: #bebebe;
     border-style: none;
@@ -45,11 +53,7 @@ font-weight: 700;
     margin-left: 0;
 }
 
-.EnterCity {
-    margin-bottom: 10px;
-    height: 45px;
-    border-radius: 4px;
-}
+
 
 .CityHistory {
    
@@ -58,7 +62,10 @@ font-weight: 700;
     border-top: 2px rgb(63, 63, 63) solid;
    
 }
+/* City history styling ends here */
 
+
+/* Results area styling begins here */
 #display {
     display: block;
     font-weight: 600;
@@ -98,6 +105,8 @@ font-weight: 700;
     font-weight: 500;
 }
 
+
+/* Series of conditional classes to be added if results meet Javascript criteria */
 .low {
     background-color: rgb(0, 128, 0);
     color: rgb(255, 255, 255);
@@ -125,3 +134,4 @@ font-weight: 700;
     padding: 3px 15px;
     border-radius: 3px;
 }
+/* Results area styling ends here */
