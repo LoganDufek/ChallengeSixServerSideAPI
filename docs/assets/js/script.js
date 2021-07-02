@@ -3,12 +3,13 @@ var displayCity = document.getElementById("display");
 var pastCity = document.getElementById("CityHistory");
 var forecast = document.getElementById("ForecastArea")
 var currentMoment = moment().format('(M/D/YYYY)');
+var textField = document.getElementById("EnterCity")
 var cityCount = 0;
 var pageIndex = [];
 var forecastIndex = [];
 
 function findWeather() {
-
+    
     displayCity.innerHTML = ""
     forecast.innerHTML = ""
     var userInput = document.querySelector('.EnterCity').value;
@@ -21,7 +22,7 @@ function findWeather() {
         })
         .then(function (response) {
 
-
+            textField.value = "";
 
             console.log(response)
 
@@ -60,7 +61,7 @@ function findWeather() {
             chosenCity.appendChild(humidity);
             pastCity.appendChild(cityButton);
             displayCity.appendChild(fiveDayForecast);
-
+            
 
             fetch(
                 "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&units=imperial&appid=7d9892aa7b472563716938b17ffcc18a"
@@ -93,8 +94,6 @@ function findWeather() {
                     uvIndex.innerHTML = "UV Index: ";
                     chosenCity.appendChild(uvIndex);
                     uvIndex.appendChild(uvSpecific);
-
-
 
 
 
@@ -155,7 +154,7 @@ function findWeather() {
 
         })
 
-
+   
     cityCount++
 };
 
